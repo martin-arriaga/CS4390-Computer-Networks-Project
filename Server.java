@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Server {
+    // test
     private static final int PORT = 12345; //New server with port #
     private static final List<ClientSession> clients = Collections.synchronizedList(new ArrayList<>()); // List of client sessions
     public static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
