@@ -17,12 +17,12 @@ class LogClass {
         FileHandler serverlogHandler = new FileHandler("serverlogs.log", true);
         serverlogHandler.setFormatter(new SimpleFormatter());
         serverlogs.addHandler(serverlogHandler);
-        serverlogs.setLevel(Level.INFO);
+
 
         FileHandler userlogHandler = new FileHandler("userlogs.log", true);
         userlogHandler.setFormatter(new SimpleFormatter());
         userlogs.addHandler(userlogHandler);
-        userlogs.setLevel(Level.INFO);
+
 
         }catch(IOException exp){
         exp.printStackTrace();
@@ -34,8 +34,13 @@ class LogClass {
     public static Logger getuserlogs(){
         return userlogs;
     }
+    public static void logServerActivity(String activity ){
+        Logger logtofile =getserverlogs();
 
-    public static void loguserinfo(UserInfo user){
+        logtofile.info( ("\n") + activity );
+
+    }
+    public static void logUserInfo(UserInfo user){
         Logger logtofile = getuserlogs();
         DateTimeFormatter format = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         String timeofconnection = format.format(user.getTimeofconnection());
@@ -124,8 +129,10 @@ class ClientHandler implements Runnable {
             clientName = in.readLine();
             connectTime = System.currentTimeMillis();
             Server.addClient(new Server.ClientSession(clientName, clientSocket, connectTime));
-            log("CONNECTED");
+            String ack = "ACK: Connected to Math Server as " + clientName;
+            //log("CONNECTED");
             out.println("ACK: Connected to Math Server as " + clientName);
+            LogClass.logServerActivity(ack);
             InetAddress clientIP = clientSocket.getInetAddress();
             String IP = clientIP.getHostAddress();
             LocalDateTime currenttime = LocalDateTime.now();
@@ -135,28 +142,34 @@ class ClientHandler implements Runnable {
             String input;
             while ((input = in.readLine()) != null) {
                 if (input.equalsIgnoreCase("exit")) {
-                    log("DISCONNECTED");
+                    //log("DISCONNECTED");
+                    LogClass.logServerActivity("DISCONNECTED");
                     break;
                 }
                 try {
                     double result = evaluate(input);
                     out.println("Result: " + result);
-                    log("REQUEST: " + input);
+                    //log("REQUEST: " + input);
+
+                    LogClass.logServerActivity("REQUEST: " + input + "\n" + "RESPONSE: "+ result);
                     user.addquerycount();
                 } catch (Exception e) {
                     out.println("Invalid input. Try again.");
-                    log("INVALID REQUEST: " + input);
+                    //log("INVALID REQUEST: " + input);
+                    LogClass.logServerActivity("INVALID REQUEST: " + input);
                 }
             }
         } catch (IOException e) {
-            log("ERROR: Connection reset or IO issue");
+            //log("ERROR: Connection reset or IO issue");
+            LogClass.logServerActivity("ERROR: CONNECTION RESET OR IO ISSUE");
         } finally {
             try {
                 if (clientName != null && user !=null ) {
                     Server.removeClient(clientName);
                     user.setdissconectiontime();
-                    LogClass.loguserinfo(user);
-                    log("SESSION CLOSED. Duration: " + getDuration() + " seconds");
+                    LogClass.logUserInfo(user);
+                    LogClass.logServerActivity("SESSION CLOSED WITH USER: "+ clientName +"."+ " Duration: " + getDuration() + " seconds");
+                    //log("SESSION CLOSED. Duration: " + getDuration() + " seconds");
                 }
                 if (clientSocket != null) clientSocket.close();
             } catch (IOException e) {
