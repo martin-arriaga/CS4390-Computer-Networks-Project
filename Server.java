@@ -1,8 +1,60 @@
 import java.io.*;
 import java.net.*;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.logging.*;
+import java.util.logging.Formatter;
 
+
+class LogClass {
+    private static final Logger serverlogs = Logger.getLogger("serverlogger");
+    private static final Logger userlogs = Logger.getLogger("userlogger");
+    static {
+        try{
+        FileHandler serverlogHandler = new FileHandler("serverlogs.log", true);
+        serverlogHandler.setFormatter(new SimpleFormatter());
+        serverlogs.addHandler(serverlogHandler);
+        serverlogs.setLevel(Level.INFO);
+
+        FileHandler userlogHandler = new FileHandler("userlogs.log", true);
+        userlogHandler.setFormatter(new SimpleFormatter());
+        userlogs.addHandler(userlogHandler);
+        userlogs.setLevel(Level.INFO);
+
+        }catch(IOException exp){
+        exp.printStackTrace();
+        }
+    }
+    public static Logger getserverlogs(){
+        return serverlogs;
+    }
+    public static Logger getuserlogs(){
+        return userlogs;
+    }
+
+    public static void loguserinfo(UserInfo user){
+        Logger logtofile = getuserlogs();
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
+        String timeofconnection = format.format(user.getTimeofconnection());
+        String timeofdisconnected = format.format(user.getTimedisconnected());
+        Duration uptime = Duration.between(user.getTimeofconnection(), user.getTimedisconnected());
+        StringBuilder fullstring = new StringBuilder();
+        fullstring.append("\n").append("--------------").append("\n")
+                .append("User ID: " + user.getUserID()).append("\n")
+                        .append("IP Address: "+ user.getIPAddress()).append("\n")
+                                .append("Port Number: " + user.getPortNumber()).append("\n")
+                                        .append("Queries Made: " + user.getQueries()).append("\n")
+                                                .append("Time of Connection: "+ timeofconnection).append("\n")
+                                                        .append("Time Disconnected: " + timeofdisconnected).append("\n")
+                                                                .append("Up time: "+ uptime).append("\n")
+                                                                        .append("--------------");
+        logtofile.info(fullstring.toString());
+
+    }
+}
 public class Server {
     // test
     private static final int PORT = 12345; //New server with port #
@@ -57,12 +109,14 @@ class ClientHandler implements Runnable {
     private PrintWriter out;
     private long connectTime;
 
+
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
     }
 
     @Override
     public void run() {
+        UserInfo user = null;
         try {
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -72,6 +126,11 @@ class ClientHandler implements Runnable {
             Server.addClient(new Server.ClientSession(clientName, clientSocket, connectTime));
             log("CONNECTED");
             out.println("ACK: Connected to Math Server as " + clientName);
+            InetAddress clientIP = clientSocket.getInetAddress();
+            String IP = clientIP.getHostAddress();
+            LocalDateTime currenttime = LocalDateTime.now();
+
+            user = new UserInfo(IP, clientSocket.getPort(), currenttime, clientName);
 
             String input;
             while ((input = in.readLine()) != null) {
@@ -83,6 +142,7 @@ class ClientHandler implements Runnable {
                     double result = evaluate(input);
                     out.println("Result: " + result);
                     log("REQUEST: " + input);
+                    user.addquerycount();
                 } catch (Exception e) {
                     out.println("Invalid input. Try again.");
                     log("INVALID REQUEST: " + input);
@@ -92,8 +152,10 @@ class ClientHandler implements Runnable {
             log("ERROR: Connection reset or IO issue");
         } finally {
             try {
-                if (clientName != null) {
+                if (clientName != null && user !=null ) {
                     Server.removeClient(clientName);
+                    user.setdissconectiontime();
+                    LogClass.loguserinfo(user);
                     log("SESSION CLOSED. Duration: " + getDuration() + " seconds");
                 }
                 if (clientSocket != null) clientSocket.close();
