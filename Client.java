@@ -4,8 +4,12 @@ import java.util.*;
 
 public class Client {
     public static void main(String[] args) {
+        String host = "localhost";
+        if(args.length > 0 && !args[0].isEmpty()){ // if no IP address is provided, use local host
+            host = args[0];
+        }
         try {
-            Socket socket = new Socket("localhost", 12345);
+            Socket socket = new Socket(host, 12345);
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             Scanner scanner = new Scanner(System.in);

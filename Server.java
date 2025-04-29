@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.logging.*;
-import java.util.logging.Formatter;
+
 
 
 class LogClass {
@@ -14,12 +14,12 @@ class LogClass {
     private static final Logger userlogs = Logger.getLogger("userlogger");
     static {
         try{
-        FileHandler serverlogHandler = new FileHandler("serverlogs.log", true);
+        FileHandler serverlogHandler= new FileHandler("serverlogs.log", true);
         serverlogHandler.setFormatter(new SimpleFormatter());
         serverlogs.addHandler(serverlogHandler);
 
 
-        FileHandler userlogHandler = new FileHandler("userlogs.log", true);
+        FileHandler userlogHandler =new FileHandler("userlogs.log", true);
         userlogHandler.setFormatter(new SimpleFormatter());
         userlogs.addHandler(userlogHandler);
 
@@ -148,6 +148,7 @@ class ClientHandler implements Runnable {
                 }
                 try {
                     double result = evaluate(input);
+
                     out.println("Result: " + result);
                     //log("REQUEST: " + input);
 
@@ -155,6 +156,7 @@ class ClientHandler implements Runnable {
                     user.addquerycount();
                 } catch (Exception e) {
                     out.println("Invalid input. Try again.");
+                    e.printStackTrace();
                     //log("INVALID REQUEST: " + input);
                     LogClass.logServerActivity("INVALID REQUEST: " + input);
                 }
