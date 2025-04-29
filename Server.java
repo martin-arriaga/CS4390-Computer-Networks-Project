@@ -149,7 +149,7 @@ class ClientHandler implements Runnable {
                 try {
                     double result = evaluate(input);
 
-                    out.println("Result: " + result);
+                    out.println("For query: " + input + " Result is: " + result );
                     //log("REQUEST: " + input);
 
                     LogClass.logServerActivity("REQUEST: " + input + "\n" + "RESPONSE: "+ result);
