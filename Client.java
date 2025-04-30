@@ -31,9 +31,11 @@ public class Client {
                 "Karen",
                 "Jeff",
                 "Mary",
-                "Lincoln"
+                "Lincoln",
+                "Vishnu",
+                "Martin",
+                "Andrew"
         };
-
 
         try {
             Socket socket = new Socket(host, 12345);
@@ -51,7 +53,7 @@ public class Client {
                 out.println(names[randomIndex]);
                 System.out.println(in.readLine()); // Read ACK
 
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 5; i++) {
                     Thread.sleep(new Random().nextInt(3000) + 3000); // Random wait
                     System.out.print("Enter math operation (e.g., 3 + 4): ");
                     int randomexprIdx = rand.nextInt(queries.length);
