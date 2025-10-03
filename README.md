@@ -1,1 +1,1 @@
-Edit this readme later when project is done to add rules on how to run. 
+[Project Specifications](Computer%20Networks%20Project.pdf)
