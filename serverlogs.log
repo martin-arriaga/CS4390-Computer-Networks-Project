@@ -1,0 +1,574 @@
+
+Apr 29, 2025 6:25:30 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Karen
+Apr 29, 2025 6:25:33 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:25:38 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:25:42 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:25:46 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:25:49 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:25:49 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:25:49 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Karen. Duration: 19 seconds
+Apr 29, 2025 6:25:55 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Sherry
+Apr 29, 2025 6:26:01 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:26:07 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:26:11 PM LogClass logServerActivity
+INFO: 
+REQUEST: 1999 * 999
+RESPONSE: 1997001.0
+Apr 29, 2025 6:26:14 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:26:18 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:26:18 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:26:18 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Sherry. Duration: 22 seconds
+Apr 29, 2025 6:26:25 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Mary
+Apr 29, 2025 6:26:30 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:26:35 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:26:41 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:26:45 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:26:48 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:26:48 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:26:48 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Mary. Duration: 22 seconds
+Apr 29, 2025 6:29:49 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Jerry
+Apr 29, 2025 6:29:53 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:29:57 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:30:00 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:30:06 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:30:09 PM LogClass logServerActivity
+INFO: 
+REQUEST: 1999 * 999
+RESPONSE: 1997001.0
+Apr 29, 2025 6:30:09 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:30:09 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Jerry. Duration: 20 seconds
+Apr 29, 2025 6:31:53 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as null
+Apr 29, 2025 6:32:31 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Jerry
+Apr 29, 2025 6:32:37 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:32:41 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:32:45 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as standby 
+Apr 29, 2025 6:32:47 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:32:50 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:32:54 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: standby . Duration: 8 seconds
+Apr 29, 2025 6:32:54 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:32:54 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:32:54 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Jerry. Duration: 23 seconds
+Apr 29, 2025 6:33:06 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Karen
+Apr 29, 2025 6:33:12 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:33:16 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:33:20 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Joe
+Apr 29, 2025 6:33:21 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:33:24 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:33:24 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:33:28 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:33:29 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:33:29 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:33:29 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Karen. Duration: 22 seconds
+Apr 29, 2025 6:33:32 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:33:34 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Andrew
+Apr 29, 2025 6:33:37 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:33:39 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:33:42 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Mary
+Apr 29, 2025 6:33:42 PM LogClass logServerActivity
+INFO: 
+REQUEST: 1999 * 999
+RESPONSE: 1997001.0
+Apr 29, 2025 6:33:42 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:33:42 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Joe. Duration: 21 seconds
+Apr 29, 2025 6:33:44 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:33:47 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:33:48 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:33:51 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Jerry
+Apr 29, 2025 6:33:51 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:33:53 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:33:54 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:33:54 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:33:54 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:33:54 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Andrew. Duration: 20 seconds
+Apr 29, 2025 6:33:58 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:33:58 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:34:01 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:34:01 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Joe
+Apr 29, 2025 6:34:03 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:34:04 PM LogClass logServerActivity
+INFO: 
+REQUEST: 1999 * 999
+RESPONSE: 1997001.0
+Apr 29, 2025 6:34:06 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:34:09 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:34:09 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:34:09 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Mary. Duration: 26 seconds
+Apr 29, 2025 6:34:10 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:34:10 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:34:10 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:34:10 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Jerry. Duration: 19 seconds
+Apr 29, 2025 6:34:16 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:34:17 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as standyb
+Apr 29, 2025 6:34:21 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:34:24 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:34:24 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:34:24 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Joe. Duration: 22 seconds
+Apr 29, 2025 6:34:26 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as standyby
+Apr 29, 2025 6:34:35 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Stevette
+Apr 29, 2025 6:34:39 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:34:42 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 + 4
+RESPONSE: 10.0
+Apr 29, 2025 6:34:43 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:34:48 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:34:51 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 + 0
+RESPONSE: 6.0
+Apr 29, 2025 6:34:52 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:34:57 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:34:57 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:34:57 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Stevette. Duration: 22 seconds
+Apr 29, 2025 6:35:02 PM LogClass logServerActivity
+INFO: 
+REQUEST: 8 + 9
+RESPONSE: 17.0
+Apr 29, 2025 6:35:12 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Karen
+Apr 29, 2025 6:35:16 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:35:16 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:35:16 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: standyb. Duration: 58 seconds
+Apr 29, 2025 6:35:20 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:35:24 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Stevette
+Apr 29, 2025 6:35:26 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:35:27 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:35:30 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:35:30 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:35:33 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:35:35 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 * 5
+RESPONSE: 20.0
+Apr 29, 2025 6:35:35 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:35:35 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Karen. Duration: 23 seconds
+Apr 29, 2025 6:35:39 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:35:42 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Karen
+Apr 29, 2025 6:35:44 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:35:44 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:35:44 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Stevette. Duration: 20 seconds
+Apr 29, 2025 6:35:48 PM LogClass logServerActivity
+INFO: 
+REQUEST: 1999 * 999
+RESPONSE: 1997001.0
+Apr 29, 2025 6:35:49 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 7
+RESPONSE: 14.0
+Apr 29, 2025 6:35:53 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 * 8
+RESPONSE: 24.0
+Apr 29, 2025 6:35:57 PM LogClass logServerActivity
+INFO: 
+REQUEST: 100 / 10
+RESPONSE: 10.0
+Apr 29, 2025 6:36:01 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:36:01 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Jeff
+Apr 29, 2025 6:36:06 PM LogClass logServerActivity
+INFO: 
+REQUEST: 7 + 3
+RESPONSE: 10.0
+Apr 29, 2025 6:36:06 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:36:06 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Karen. Duration: 23 seconds
+Apr 29, 2025 6:36:06 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:36:11 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:36:17 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:36:21 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 / 5
+RESPONSE: 4.0
+Apr 29, 2025 6:36:25 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:36:25 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:36:25 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Jeff. Duration: 23 seconds
+Apr 29, 2025 6:36:30 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Jeff
+Apr 29, 2025 6:36:35 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:36:40 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:36:40 PM LogClass logServerActivity
+INFO: 
+ACK: Connected to Math Server as Vishnu
+Apr 29, 2025 6:36:46 PM LogClass logServerActivity
+INFO: 
+REQUEST: 6 - 3
+RESPONSE: 3.0
+Apr 29, 2025 6:36:46 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:36:51 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:36:52 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:36:55 PM LogClass logServerActivity
+INFO: 
+REQUEST: 300 * 9
+RESPONSE: 2700.0
+Apr 29, 2025 6:36:56 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:36:56 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:36:56 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Jeff. Duration: 25 seconds
+Apr 29, 2025 6:36:59 PM LogClass logServerActivity
+INFO: 
+REQUEST: 20 * 5
+RESPONSE: 100.0
+Apr 29, 2025 6:37:03 PM LogClass logServerActivity
+INFO: 
+REQUEST:  28 * 56
+RESPONSE: 1568.0
+Apr 29, 2025 6:37:03 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:37:03 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: Vishnu. Duration: 22 seconds
+Apr 29, 2025 6:37:10 PM LogClass logServerActivity
+INFO: 
+REQUEST: 3 + 4
+RESPONSE: 7.0
+Apr 29, 2025 6:37:16 PM LogClass logServerActivity
+INFO: 
+REQUEST: 4 + 5
+RESPONSE: 9.0
+Apr 29, 2025 6:37:27 PM LogClass logServerActivity
+INFO: 
+DISCONNECTED
+Apr 29, 2025 6:37:27 PM LogClass logServerActivity
+INFO: 
+SESSION CLOSED WITH USER: standyby. Duration: 180 seconds
